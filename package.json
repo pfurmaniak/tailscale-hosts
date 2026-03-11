@@ -1,0 +1,23 @@
+{
+  "name": "tailscale-hosts",
+  "version": "1.0.0",
+  "description": "Automatically map Tailscale hosts to DNS names in /etc/hosts.",
+  "license": "ISC",
+  "author": "Paweł Furmaniak",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsx --watch src/script.ts",
+    "build": "tsc",
+    "start": "node dist/script.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "commander": "^14.0.3"
+  }
+}
