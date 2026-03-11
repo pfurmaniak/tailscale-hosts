@@ -1,6 +1,6 @@
 import { Token } from "typedi";
 
-export const optionsToken = new Token<Options>("OPTIONS_TOKEN");
+export const optionsToken = new Token<Options>("optionsToken");
 export type Options = Readonly<{
     domain: string | null;
     tags: string[];
