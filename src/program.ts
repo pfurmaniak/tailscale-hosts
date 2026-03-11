@@ -1,29 +1,27 @@
 #!/usr/bin/env node
+import 'reflect-metadata';
 
-import { exec } from "child_process";
 import { program } from "commander";
-import { promisify } from "util";
-import { Options } from "./options";
+import Container from 'typedi';
+import { optionsToken } from "./options";
 import { Peer } from "./peer";
 import { PeerInfo } from "./peer-info";
-
-const parseOpts = (value: string, opts: string[]) => [...opts, value];
+import { execAsync, parseArrayOpts } from './utils';
 
 program
     .name("tailscale-hosts")
     .description("Automatically map Tailscale hosts to DNS names in /etc/hosts.")
     .version("1.0.0")
     .option("-d, --domain <domain>", "Domain suffix to add to hostname.")
-    .option("-t, --tags <tag>", "Filter hosts by tag.", parseOpts, [])
+    .option("-t, --tags <tags>", "Filter hosts by tag.", parseArrayOpts, [])
     .option("-b, --binary <binary>", "Path to tailscale binary.", "tailscale")
-    .option("-h, --hosts <host>", "Additional host to append to hosts file.", parseOpts, []);
+    .option("-h, --hosts <hosts>", "Additional host to append to hosts file.", parseArrayOpts, [])
+    .action((args) => {
+        console.log(args);
+    });
 
-console.log(process.argv);
 program.parse(process.argv);
-export const options: Options = program.opts();
-const execAsync = promisify(exec);
-
-console.log(options);
+Container.set(optionsToken, program.opts());
 
 async function getPeers() {
     const { stdout } = await execAsync(`${options.binary} status --json`);
