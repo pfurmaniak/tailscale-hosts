@@ -26,6 +26,8 @@
     "commander": "^14.0.3",
     "mutative": "^1.3.0",
     "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "tree-kill": "^1.2.2",
     "typedi": "^0.10.0"
   }
 }

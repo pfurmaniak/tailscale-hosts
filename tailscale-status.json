@@ -1,0 +1,695 @@
+{
+  "Version": "1.94.2-t0a29cf18b-g3f044c9f6",
+  "TUN": true,
+  "BackendState": "Running",
+  "HaveNodeKey": true,
+  "AuthURL": "",
+  "TailscaleIPs": [
+    "100.93.0.7",
+    "fd7a:115c:a1e0::9536:9513"
+  ],
+  "Self": {
+    "ID": "npqEu3sW5721CNTRL",
+    "PublicKey": "nodekey:eb93f937d333fcf02437aed2024b4be249754995887b269ffcfcd3a295409512",
+    "HostName": "unifi",
+    "DNSName": "unifi.moose-ph.ts.net.",
+    "OS": "linux",
+    "UserID": 8206006009370787,
+    "TailscaleIPs": [
+      "100.93.0.7",
+      "fd7a:115c:a1e0::9536:9513"
+    ],
+    "AllowedIPs": [
+      "100.93.0.7/32",
+      "fd7a:115c:a1e0::9536:9513/128"
+    ],
+    "Tags": [
+      "tag:server"
+    ],
+    "Addrs": [
+      "46.149.146.230:62487",
+      "46.149.146.230:41641",
+      "192.168.70.22:41641"
+    ],
+    "CurAddr": "",
+    "Relay": "waw",
+    "PeerRelay": "",
+    "RxBytes": 0,
+    "TxBytes": 0,
+    "Created": "2026-03-11T02:27:24.190577438Z",
+    "LastWrite": "0001-01-01T00:00:00Z",
+    "LastSeen": "0001-01-01T00:00:00Z",
+    "LastHandshake": "0001-01-01T00:00:00Z",
+    "Online": true,
+    "ExitNode": false,
+    "ExitNodeOption": false,
+    "Active": false,
+    "PeerAPIURL": [
+      "http://100.93.0.7:61778",
+      "http://[fd7a:115c:a1e0::9536:9513]:65457"
+    ],
+    "TaildropTarget": 0,
+    "NoFileSharingReason": "",
+    "Capabilities": [
+      "HTTPS://TAILSCALE.COM/s/DEPRECATED-NODE-CAPS#see-https://github.com/tailscale/tailscale/issues/11508",
+      "https://tailscale.com/cap/file-sharing",
+      "https://tailscale.com/cap/is-owner",
+      "https://tailscale.com/cap/ssh",
+      "https://tailscale.com/cap/tailnet-lock",
+      "probe-udp-lifetime",
+      "ssh-behavior-v1",
+      "ssh-env-vars",
+      "store-appc-routes",
+      "tailnet-display-name",
+      "tailscale.com/app-connectors"
+    ],
+    "CapMap": {
+      "https://tailscale.com/cap/file-sharing": null,
+      "https://tailscale.com/cap/is-owner": null,
+      "https://tailscale.com/cap/ssh": null,
+      "https://tailscale.com/cap/tailnet-lock": null,
+      "probe-udp-lifetime": null,
+      "ssh-behavior-v1": null,
+      "ssh-env-vars": null,
+      "store-appc-routes": null,
+      "tailnet-display-name": [
+        "furmaniak"
+      ],
+      "tailscale.com/app-connectors": null
+    },
+    "InNetworkMap": true,
+    "InMagicSock": false,
+    "InEngine": false
+  },
+  "Health": [
+    "Some peers are advertising routes but --accept-routes is false"
+  ],
+  "MagicDNSSuffix": "moose-ph.ts.net",
+  "CurrentTailnet": {
+    "Name": "pawel.f.furmaniak@gmail.com",
+    "MagicDNSSuffix": "moose-ph.ts.net",
+    "MagicDNSEnabled": false
+  },
+  "CertDomains": null,
+  "Peer": {
+    "nodekey:1ffb5ad7d1bff09ed75b1a06a25440ec491f2cc40cb94b13dd6f8991dbd61674": {
+      "ID": "ns5jP9E8uB21CNTRL",
+      "PublicKey": "nodekey:1ffb5ad7d1bff09ed75b1a06a25440ec491f2cc40cb94b13dd6f8991dbd61674",
+      "HostName": "DESKTOP-VM",
+      "DNSName": "desktop-vm.moose-ph.ts.net.",
+      "OS": "windows",
+      "UserID": 4969913924045246,
+      "TailscaleIPs": [
+        "100.93.0.102",
+        "fd7a:115c:a1e0::db33:1675"
+      ],
+      "AllowedIPs": [
+        "100.93.0.102/32",
+        "fd7a:115c:a1e0::db33:1675/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "fra",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-01-28T10:08:58.282956179Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "2026-02-17T08:30:13.1Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.102:41116",
+        "http://[fd7a:115c:a1e0::db33:1675]:45759"
+      ],
+      "TaildropTarget": 5,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2026-07-27T10:08:58Z"
+    },
+    "nodekey:243e94d8616a245b3564d5a550e6aa3586c98889053812fe0f7060229ffccf41": {
+      "ID": "nFyEYQEtmz11CNTRL",
+      "PublicKey": "nodekey:243e94d8616a245b3564d5a550e6aa3586c98889053812fe0f7060229ffccf41",
+      "HostName": "DESKTOP-T14S",
+      "DNSName": "desktop-t14s.moose-ph.ts.net.",
+      "OS": "windows",
+      "UserID": 4969913924045246,
+      "TailscaleIPs": [
+        "100.93.0.101",
+        "fd7a:115c:a1e0::9f33:cf42"
+      ],
+      "AllowedIPs": [
+        "100.93.0.101/32",
+        "fd7a:115c:a1e0::9f33:cf42/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2025-11-21T04:58:43.005271489Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "2025-12-22T09:46:16.1Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.101:41755",
+        "http://[fd7a:115c:a1e0::9f33:cf42]:59878"
+      ],
+      "TaildropTarget": 5,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2026-05-20T04:58:43Z"
+    },
+    "nodekey:2600ecc6e3d227b05ded97c65097a193ee3a95bc9f13e4d94dffd011540e7444": {
+      "ID": "nDkKgnYohR11CNTRL",
+      "PublicKey": "nodekey:2600ecc6e3d227b05ded97c65097a193ee3a95bc9f13e4d94dffd011540e7444",
+      "HostName": "kvm-a98a",
+      "DNSName": "kvm-a98a.moose-ph.ts.net.",
+      "OS": "linux",
+      "UserID": 375521926004866,
+      "TailscaleIPs": [
+        "100.93.0.6",
+        "fd7a:115c:a1e0::5433:7445"
+      ],
+      "AllowedIPs": [
+        "100.93.0.6/32",
+        "fd7a:115c:a1e0::5433:7445/128"
+      ],
+      "Tags": [
+        "tag:server"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-02-14T13:48:58.597504942Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "2026-03-10T20:43:30.1Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.6:49604",
+        "http://[fd7a:115c:a1e0::5433:7445]:35638"
+      ],
+      "TaildropTarget": 5,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false
+    },
+    "nodekey:2cda8c2ac8e6d71ccdd483460b53f492d94daf8183309cc7b0f30819bcc75337": {
+      "ID": "nxXpeU55Ea11CNTRL",
+      "PublicKey": "nodekey:2cda8c2ac8e6d71ccdd483460b53f492d94daf8183309cc7b0f30819bcc75337",
+      "HostName": "DESKTOP-KDM19P4",
+      "DNSName": "desktop-kdm19p4.moose-ph.ts.net.",
+      "OS": "windows",
+      "UserID": 4969913924045246,
+      "TailscaleIPs": [
+        "100.93.0.100",
+        "fd7a:115c:a1e0::bc33:5338"
+      ],
+      "AllowedIPs": [
+        "100.93.0.100/32",
+        "fd7a:115c:a1e0::bc33:5338/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2025-11-03T23:27:26.27775365Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "2026-03-10T18:19:21.1Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": null,
+      "TaildropTarget": 5,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2026-05-02T23:27:26Z"
+    },
+    "nodekey:34c8e6666386773aa8af1d6fb778b7949504126e2af0ece5ab6163cf3f32f259": {
+      "ID": "n6ukUPh8dB21CNTRL",
+      "PublicKey": "nodekey:34c8e6666386773aa8af1d6fb778b7949504126e2af0ece5ab6163cf3f32f259",
+      "HostName": "FRAMEWORK-13",
+      "DNSName": "framework-13.moose-ph.ts.net.",
+      "OS": "windows",
+      "UserID": 4969913924045246,
+      "TailscaleIPs": [
+        "100.93.0.103",
+        "fd7a:115c:a1e0::3f33:f25a"
+      ],
+      "AllowedIPs": [
+        "100.93.0.103/32",
+        "fd7a:115c:a1e0::3f33:f25a/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-01-23T10:02:10.758747071Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "2026-03-10T16:54:39.1Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": null,
+      "TaildropTarget": 5,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2026-07-22T10:02:10Z"
+    },
+    "nodekey:3e6e545dcc36a8a732d46e0830d5fea2ec2517098e3ab01d5a596410030d6e2b": {
+      "ID": "n1KB7Wfj1911CNTRL",
+      "PublicKey": "nodekey:3e6e545dcc36a8a732d46e0830d5fea2ec2517098e3ab01d5a596410030d6e2b",
+      "HostName": "localhost",
+      "DNSName": "pixel-8.moose-ph.ts.net.",
+      "OS": "android",
+      "UserID": 4969913924045246,
+      "TailscaleIPs": [
+        "100.93.0.104",
+        "fd7a:115c:a1e0::333:6e2c"
+      ],
+      "AllowedIPs": [
+        "100.93.0.104/32",
+        "fd7a:115c:a1e0::333:6e2c/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-01-16T03:27:00.905851911Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "2026-01-18T08:29:10.1Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.104:1",
+        "http://[fd7a:115c:a1e0::333:6e2c]:1"
+      ],
+      "TaildropTarget": 5,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2026-07-15T03:27:00Z"
+    },
+    "nodekey:6245f51ee392ac0195a5bedc55c3cbc69c81d67a86e5d5031ef4a739d979ca4a": {
+      "ID": "nFGT6kDUns11CNTRL",
+      "PublicKey": "nodekey:6245f51ee392ac0195a5bedc55c3cbc69c81d67a86e5d5031ef4a739d979ca4a",
+      "HostName": "pfsense",
+      "DNSName": "pfsense.moose-ph.ts.net.",
+      "OS": "freebsd",
+      "UserID": 375521926004866,
+      "TailscaleIPs": [
+        "100.93.0.1",
+        "fd7a:115c:a1e0::d937:ca4b"
+      ],
+      "AllowedIPs": [
+        "100.93.0.1/32",
+        "fd7a:115c:a1e0::d937:ca4b/128",
+        "192.168.70.0/24"
+      ],
+      "Tags": [
+        "tag:router"
+      ],
+      "PrimaryRoutes": [
+        "192.168.70.0/24"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-02-17T08:26:45.848417138Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": true,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.1:54375",
+        "http://[fd7a:115c:a1e0::d937:ca4b]:36315"
+      ],
+      "TaildropTarget": 9,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false
+    },
+    "nodekey:b07d3ab4cc5bc0ec5637e732aa39f1bd6b101d426f9071e2e7ea0366b83e831f": {
+      "ID": "nuddWBYzD511CNTRL",
+      "PublicKey": "nodekey:b07d3ab4cc5bc0ec5637e732aa39f1bd6b101d426f9071e2e7ea0366b83e831f",
+      "HostName": "ThinkBook14G8",
+      "DNSName": "thinkbook14g8.moose-ph.ts.net.",
+      "OS": "windows",
+      "UserID": 8919697554347668,
+      "TailscaleIPs": [
+        "100.93.0.106",
+        "fd7a:115c:a1e0::b83b:8320"
+      ],
+      "AllowedIPs": [
+        "100.93.0.106/32",
+        "fd7a:115c:a1e0::b83b:8320/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-02-15T08:14:09.734375025Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": true,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.106:60599",
+        "http://[fd7a:115c:a1e0::b83b:8320]:47139"
+      ],
+      "TaildropTarget": 9,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2026-08-14T08:14:09Z"
+    },
+    "nodekey:ca2b92b09fdde7cb0cbdcce05d3afb8a282ae7a59388ca9db034db1397582f50": {
+      "ID": "nY182bbWFg11CNTRL",
+      "PublicKey": "nodekey:ca2b92b09fdde7cb0cbdcce05d3afb8a282ae7a59388ca9db034db1397582f50",
+      "HostName": "Unraid",
+      "DNSName": "unraid.moose-ph.ts.net.",
+      "OS": "linux",
+      "UserID": 375521926004866,
+      "TailscaleIPs": [
+        "100.93.0.3",
+        "fd7a:115c:a1e0::6201:b334"
+      ],
+      "AllowedIPs": [
+        "100.93.0.3/32",
+        "fd7a:115c:a1e0::6201:b334/128"
+      ],
+      "Tags": [
+        "tag:server"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2025-02-09T18:52:17.923674047Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "2026-03-11T01:17:54.1Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.3:46411",
+        "http://[fd7a:115c:a1e0::6201:b334]:47851"
+      ],
+      "TaildropTarget": 5,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false
+    },
+    "nodekey:cd24141ae032984639221b85c00d0c55ff2af82b2032e825c92f29fe15130e6e": {
+      "ID": "nUghU4LS9R11CNTRL",
+      "PublicKey": "nodekey:cd24141ae032984639221b85c00d0c55ff2af82b2032e825c92f29fe15130e6e",
+      "HostName": "localhost",
+      "DNSName": "pixel-9.moose-ph.ts.net.",
+      "OS": "android",
+      "UserID": 4969913924045246,
+      "TailscaleIPs": [
+        "100.93.0.105",
+        "fd7a:115c:a1e0::1533:e6f"
+      ],
+      "AllowedIPs": [
+        "100.93.0.105/32",
+        "fd7a:115c:a1e0::1533:e6f/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "fra",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2025-11-18T12:03:03.221380022Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "2026-02-15T14:35:14.1Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.105:1",
+        "http://[fd7a:115c:a1e0::1533:e6f]:1"
+      ],
+      "TaildropTarget": 5,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2026-05-17T12:03:03Z"
+    },
+    "nodekey:cff4f98ddf03e78d24e492f9d0a8a63dc29388934bcfd80d217fa64e3e4ba24f": {
+      "ID": "nBsQxxT4gw11CNTRL",
+      "PublicKey": "nodekey:cff4f98ddf03e78d24e492f9d0a8a63dc29388934bcfd80d217fa64e3e4ba24f",
+      "HostName": "proxy",
+      "DNSName": "unraid-proxy.moose-ph.ts.net.",
+      "OS": "linux",
+      "UserID": 375521926004866,
+      "TailscaleIPs": [
+        "100.93.0.4",
+        "fd7a:115c:a1e0::3e33:a250"
+      ],
+      "AllowedIPs": [
+        "100.93.0.4/32",
+        "fd7a:115c:a1e0::3e33:a250/128"
+      ],
+      "Tags": [
+        "tag:service"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-01-29T07:16:58.482327748Z",
+      "LastWrite": "2026-03-11T02:33:59.558125093Z",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": true,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.4:41192",
+        "http://[fd7a:115c:a1e0::3e33:a250]:36164"
+      ],
+      "TaildropTarget": 9,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false
+    },
+    "nodekey:e0aaac160a4e9edd8eb3f5d8ea57278546bdf79d7bf489ef7aa32d5bd91d5254": {
+      "ID": "nBsnmXPtHS11CNTRL",
+      "PublicKey": "nodekey:e0aaac160a4e9edd8eb3f5d8ea57278546bdf79d7bf489ef7aa32d5bd91d5254",
+      "HostName": "DELL-XPS-15",
+      "DNSName": "dell-xps-15.moose-ph.ts.net.",
+      "OS": "windows",
+      "UserID": 4969913924045246,
+      "TailscaleIPs": [
+        "100.93.0.107",
+        "fd7a:115c:a1e0::d936:5255"
+      ],
+      "AllowedIPs": [
+        "100.93.0.107/32",
+        "fd7a:115c:a1e0::d936:5255/128"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-03-10T20:04:41.62089983Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "2026-03-11T04:10:00.1Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": false,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.107:56353",
+        "http://[fd7a:115c:a1e0::d936:5255]:55965"
+      ],
+      "TaildropTarget": 5,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false,
+      "KeyExpiry": "2026-09-06T20:04:41Z"
+    },
+    "nodekey:ec092cca71a97ce96af15530853f88119ffa0c965790f8a7f98c7eb3f5111156": {
+      "ID": "nL27s8X3jJ11CNTRL",
+      "PublicKey": "nodekey:ec092cca71a97ce96af15530853f88119ffa0c965790f8a7f98c7eb3f5111156",
+      "HostName": "OpenWrt",
+      "DNSName": "openwrt.moose-ph.ts.net.",
+      "OS": "linux",
+      "UserID": 375521926004866,
+      "TailscaleIPs": [
+        "100.93.0.2",
+        "fd7a:115c:a1e0::f537:1157"
+      ],
+      "AllowedIPs": [
+        "100.93.0.2/32",
+        "fd7a:115c:a1e0::f537:1157/128",
+        "192.168.93.0/24"
+      ],
+      "Tags": [
+        "tag:router"
+      ],
+      "PrimaryRoutes": [
+        "192.168.93.0/24"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-02-17T13:16:58.048584293Z",
+      "LastWrite": "2026-03-11T03:13:10.057923069Z",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": true,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.2:34269",
+        "http://[fd7a:115c:a1e0::f537:1157]:52544"
+      ],
+      "TaildropTarget": 9,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false
+    },
+    "nodekey:ff981bc54e83d68e54562faf63d26d675b508ebc76bd5333b2be86110ccb614e": {
+      "ID": "nmQcWKEgg111CNTRL",
+      "PublicKey": "nodekey:ff981bc54e83d68e54562faf63d26d675b508ebc76bd5333b2be86110ccb614e",
+      "HostName": "vps",
+      "DNSName": "vps.moose-ph.ts.net.",
+      "OS": "linux",
+      "UserID": 375521926004866,
+      "TailscaleIPs": [
+        "100.93.0.5",
+        "fd7a:115c:a1e0::c33:614f"
+      ],
+      "AllowedIPs": [
+        "100.93.0.5/32",
+        "fd7a:115c:a1e0::c33:614f/128"
+      ],
+      "Tags": [
+        "tag:server"
+      ],
+      "Addrs": null,
+      "CurAddr": "",
+      "Relay": "waw",
+      "PeerRelay": "",
+      "RxBytes": 0,
+      "TxBytes": 0,
+      "Created": "2026-01-28T17:18:31.125985097Z",
+      "LastWrite": "0001-01-01T00:00:00Z",
+      "LastSeen": "0001-01-01T00:00:00Z",
+      "LastHandshake": "0001-01-01T00:00:00Z",
+      "Online": true,
+      "ExitNode": false,
+      "ExitNodeOption": false,
+      "Active": false,
+      "PeerAPIURL": [
+        "http://100.93.0.5:36990",
+        "http://[fd7a:115c:a1e0::c33:614f]:33852"
+      ],
+      "TaildropTarget": 9,
+      "NoFileSharingReason": "",
+      "InNetworkMap": true,
+      "InMagicSock": true,
+      "InEngine": false
+    }
+  },
+  "User": {
+    "375521926004866": {
+      "ID": 375521926004866,
+      "LoginName": "tagged-devices",
+      "DisplayName": "Tagged Devices"
+    },
+    "4969913924045246": {
+      "ID": 4969913924045246,
+      "LoginName": "pawel.f.furmaniak@gmail.com",
+      "DisplayName": "Paweł Furmaniak",
+      "ProfilePicURL": "https://lh3.googleusercontent.com/a/ACg8ocKptchsrCSjDuQbvRFIsMqfWl7o7ly-ukQp_C2CjFZzylVceg=s96-c"
+    },
+    "8206006009370787": {
+      "ID": 8206006009370787,
+      "LoginName": "unifi.moose-ph.ts.net",
+      "DisplayName": "unifi"
+    },
+    "8919697554347668": {
+      "ID": 8919697554347668,
+      "LoginName": "de44nis@gmail.com",
+      "DisplayName": "Darek Furmaniak",
+      "ProfilePicURL": "https://lh3.googleusercontent.com/a/ACg8ocIN5vye6XHGFOiyEk4MHgNrzje6w-Z1qHc_Xe0pNTbjXlgxaBHV=s96-c"
+    }
+  },
+  "ClientVersion": null
+}

@@ -1,4 +1,5 @@
 import { computed, ReadonlySignal, signal } from "@preact/signals";
+import { from, map } from "rxjs";
 import { Inject, Service } from "typedi";
 import { type Options, optionsToken } from "../options";
 import { Peer } from "../types/peer";
@@ -9,8 +10,8 @@ import { PeerFactory } from "./peer.factory";
 export interface Peers {
     peers: ReadonlySignal<Peer[]>;
     hostsString: ReadonlySignal<string>;
-    getFromTailscale(): Promise<void>;
-    getFromOptions(): void;
+    updateFromTailscale(): Promise<void>;
+    updateFromOptions(): void;
 }
 
 @Service<Peers>()
@@ -26,7 +27,15 @@ export class PeersService implements Peers {
         private readonly peerFactory: PeerFactory
     ) { }
 
-    async getFromTailscale() {
+    getFromTailscale() {
+        return from(execAsync(`${this.options.binary} status --json`)).pipe(
+            map(({ stdout, stderr }) => {
+                // Process the stdout and stderr as needed
+            })
+        );
+    }
+
+    async updateFromTailscale() {
         const { stdout } = await execAsync(`${this.options.binary} status --json`);
         const output: { Peer: { [nodeKey: string]: PeerInfo } } = JSON.parse(stdout);
         const peers = Object.values(output.Peer)
@@ -34,7 +43,7 @@ export class PeersService implements Peers {
         this.peers.value = [...this.peers.value, ...peers];
     }
 
-    getFromOptions() {
+    updateFromOptions() {
         for (const customHost of this.options.hosts) {
             const [ip, hostname] = customHost.split(/\s+/);
             if (ip && hostname) {
